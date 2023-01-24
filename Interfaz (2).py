@@ -2,8 +2,8 @@
 # coding: utf-8
 
 # In[24]:
-
-
+import pip
+pip.main(["install","customtkinter"])
 import tkinter
 import tkinter.messagebox
 import customtkinter
@@ -39,11 +39,11 @@ class App(customtkinter.CTk):
         self.sidebar_button_3 = customtkinter.CTkButton(self.sidebar_frame, text="Dia del mes",command=self.sidebar_button_event)
         self.sidebar_button_3.grid(row=3, column=0, padx=20, pady=10)
         self.sidebar_button_4 = customtkinter.CTkButton(self.sidebar_frame, text="Dia de la semana",command=self.sidebar_button_event)
-        self.sidebar_button_4.grid(row=3, column=0, padx=20, pady=10)
+        self.sidebar_button_4.grid(row=4, column=0, padx=20, pady=10)
         self.sidebar_button_5 = customtkinter.CTkButton(self.sidebar_frame, text="Tiempos de entrega",command=self.sidebar_button_event)
-        self.sidebar_button_5.grid(row=3, column=0, padx=20, pady=10)
+        self.sidebar_button_5.grid(row=5, column=0, padx=20, pady=10)
         self.sidebar_button_6 = customtkinter.CTkButton(self.sidebar_frame, text="Carrier",command=self.sidebar_button_event)
-        self.sidebar_button_6.grid(row=3, column=0, padx=20, pady=10)
+        self.sidebar_button_6.grid(row=6, column=0, padx=20, pady=10)
        
 
         # _______________________Reporte mensual general_______________________
